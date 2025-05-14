@@ -9,7 +9,6 @@ const validateEvent = (event) => {
     finish_date: Joi.date().required(),
     finish_time: Joi.date().required(),
     info: Joi.string().required(),
-    event_type_id: Joi.number().required(),
     human_category_id: Joi.number().required(),
     venue_id: Joi.number().required(),
     lang_id: Joi.number().required(),

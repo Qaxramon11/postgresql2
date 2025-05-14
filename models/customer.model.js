@@ -1,5 +1,3 @@
-const { models } = require("mongoose");
-
 module.exports = (sequelize, DataTypes) => {
   const Customer = sequelize.define("Customer", {
     id: {

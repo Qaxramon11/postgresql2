@@ -8,7 +8,7 @@ module.exports = (sequelize, DataTypes) => {
       primaryKey: true,
     },
     name: {
-      type: DataTypes.INTEGER,
+      type: DataTypes.STRING,
       allowNull: false,
     },
     photo: {
@@ -35,10 +35,6 @@ module.exports = (sequelize, DataTypes) => {
       type: DataTypes.STRING,
       allowNull: false,
     },
-    event_type_id: {
-      type: DataTypes.INTEGER,
-      allowNull: false,
-    },
     human_category_id: {
       type: DataTypes.INTEGER,
       allowNull: false,
@@ -58,10 +54,6 @@ module.exports = (sequelize, DataTypes) => {
   });
 
   Event.associate = (models) => {
-    Event.belongsTo(models.Event_type, {
-      foreignKey: "event_type_id",
-      as: "event_type",
-    });
     Event.belongsTo(models.Human_category, {
       foreignKey: "human_category_id",
       as: "human_category",

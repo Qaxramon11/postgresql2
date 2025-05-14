@@ -40,8 +40,6 @@ const eventController = require('../controllers/eventController');
  *                 format: date
  *               info:
  *                 type: string
- *               event_type_id:
- *                 type: integer
  *               human_category_id:
  *                 type: integer
  *               venue_id:

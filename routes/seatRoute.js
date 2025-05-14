@@ -22,7 +22,7 @@ const seatController = require('../controllers/seatController');
  *           schema:
  *             type: object
  *             properties:
- *               sector:
+ *               sector_id:
  *                 type: integer
  *               row_number:
  *                 type: integer

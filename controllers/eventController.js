@@ -28,10 +28,6 @@ exports.getEventById = async (req, res) => {
     const event = await Event.findByPk(req.params.id, {
       include: [
         {
-          model: Event_type,
-          as: "event_type",
-        },
-        {
           model: Human_category,
           as: "human_category",
         },

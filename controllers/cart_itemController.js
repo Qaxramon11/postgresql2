@@ -10,7 +10,7 @@ exports.createCart_item = async (req, res) => {
     const cart_item = await Cart_item.create(req.body);
     res.status(201).send(cart_item);
   } catch (error) {
-    res.status(500).send(error);
+    res.status(500).send(error.message);
   }
 };
 

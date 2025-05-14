@@ -10,7 +10,7 @@ const options = {
     },
     servers: [
       {
-        url: "http://localhost:5000",
+        url: "http://localhost:3000",
       },
     ],
   },
@@ -20,7 +20,7 @@ const options = {
 const swaggerSpec = swaggerJsDoc(options);
 
 const setupSwagger = (app) => {
-  app.use("/amaliyot", swaggerUI.serve, swaggerUI.setup(swaggerSpec));
+  app.use("/api-docs", swaggerUI.serve, swaggerUI.setup(swaggerSpec));
 };
 
 module.exports = setupSwagger;
