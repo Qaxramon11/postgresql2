@@ -1,7 +1,7 @@
 const { Customer_card, Customer } = require("../models");
 const {
   validateCustomer_card,
-} = require("../validation/Customer_cardVal");
+} = require("../validation/customer_cardVal");
 const { Op } = require("sequelize");
 
 exports.createCustomer_card = async (req, res) => {
