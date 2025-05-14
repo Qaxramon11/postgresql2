@@ -1,5 +1,5 @@
 const { Flat } = require("../models");
-const { validateFlat } = require("../validation/FlatVal");
+const { validateFlat } = require("../validation/flatVal");
 const { Op } = require("sequelize");
 
 exports.createFlat = async (req, res) => {
